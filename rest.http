@@ -1,0 +1,19 @@
+POST http://localhost:3333/api/users
+Content-Type: application/json
+
+{
+  "age": 23,
+  "name": "Peter Pan",
+  "gender": "male",
+  "email": "peters@pan.com"
+}
+###
+PUT http://localhost:3333/api/users/115
+Content-Type: application/json
+
+{
+  "age": 93,
+  "name": "Peter Pan",
+  "gender": "male",
+  "email": "peters@pan.com"
+}

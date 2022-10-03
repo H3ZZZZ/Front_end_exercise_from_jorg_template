@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <title>Startcode Exercise 2</title>
+</head>
+<body>
+<div id="all-content" style="display: none">
+    <ul id="menu" class="header">
+        <li><a href="" id="about">About</a></li>
+        <li><a href="" id="ex1">Ex1</a></li>
+        <li><a href="" id="ex2">Ex2</a></li>
+        <li><a href="" id="ex3">Ex3</a></li>
+    </ul>
+
+    <div class="content">
+        <!-- Exercise-1 -->
+        <div id="ex1_html" style="display: none">
+            <h3>Exercise 1</h3>
+            <p>Add your basic HTML for Exercise 1 here</p>
+            <ul id="jokes"></ul>
+            <input type="number" id="jokeid"/>
+            <button id="getJokeButton">Get joke</button>
+            <p id="jokeText"></p>
+            <textarea id="jokeToAdd" cols="20" rows="5"></textarea>
+            <button id="addJokeButton">Add joke</button>
+        </div>
+
+        <!-- End of HTML for exercise-1 -->
+
+        <!-- Exercise-2 -->
+        <div id="ex2_html" style="display: none">
+            <h3>Exercise 2</h3>
+            <p id="ex2p">LUUUUUUUUUUUUL</p>
+
+            <button id="quoteButton">Get a random quote</button>
+            <p id="quote">Your quote will appear here</p>
+
+        </div>
+        <!-- End of HTML for exercise-2 -->
+
+        <!-- Exercise-3 -->
+        <div id="ex3_html" style="display: none">
+            <h3>Ex-3</h3>
+            <p>Add your basic HTML for Exercise 3 here</p>
+
+            <div class="row" style="min-height: 5em">
+                <div
+                        class="col-md-8 pre-scrollable"
+                        style="background-color: lightgrey"
+                >
+                    <h5>All Users</h5>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Age</th>
+                            <th>Name</th>
+                            <th></th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="allUserRows"></tbody>
+                    </table>
+                </div>
+                <div class="col-md-4" style="background-color: powderblue">
+                    <h5>Find User</h5>
+                    <input type="number" id="fUserInput" placeholder="insert user id">
+                    <button id="fUserBtn">Find user</button>
+                    <p id="fUserOutput"></p>
+                </div>
+            </div>
+            <div class="row" style="min-height: 5em">
+                <div class="col-md-4" style="background-color: powderblue">
+                    <h5>Add User</h5>
+                        <input id="name" name="name" type="text" placeholder="What is your name"/>
+                        <input id="age" name="age" type="number" placeholder="How old are you?"/>
+                        <input type="radio" id="addgendermale" name ="addgender" value="male">
+                        <label for="addgendermale">Male</label>
+                        <input type="radio" id="addgenderfemale" name ="addgender" value="female">
+                        <label for="addgenderfemale">Female</label>
+                        <input id="email" name="email" type="email" placeholder="Type your email"/>
+                    <input type="button" id="addbtn" value="Add"/>
+                </div>
+                <div class="col-md-4" style="background-color: lightgrey">
+                    <h5>Edit User</h5>
+                    <input id="userId" name ="userid" type="number" placeholder="Id of user">
+                    <input id="editname" name="editname" type="text" placeholder="What is your name"/>
+                    <input id="editage" name="editage" type="number" placeholder="How old are you?"/>
+                    <input type="radio" id="gendermale" name ="gender" value="male">
+                    <label for="gendermale">Male</label>
+                    <input type="radio" id="genderfemale" name ="gender" value="female">
+                    <label for="genderfemale">Female</label>
+                    <input id="editemail" name="editemail" type="email" placeholder="Type your email"/>
+                    <input type="button" id="editbtn" value="Edit"/>
+                </div>
+                <div class="col-md-4" style="background-color: powderblue">
+                    <h5>Delete User</h5>
+                    <input id="deleteId" name="deleteId" type="number" placeholder="Type id of person"/>
+                    <input type="button" id="deletebtn" value="Delete!"/>
+                </div>
+            </div>
+        </div>
+        <!-- End of HTML for exercise-3 -->
+
+        <!---- HTML for the About page -->
+        <div id="about_html" style="display: none">
+            <h3>About</h3>
+            <p>
+                Watch the small video given as intro to this code, BEFORE you start
+                using it
+            </p>
+        </div>
+        <!-- End of HTML for ABOUT Page -->
+
+        <!--End of all content -->
+    </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
